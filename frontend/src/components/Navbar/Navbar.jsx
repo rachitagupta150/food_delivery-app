@@ -38,7 +38,7 @@ const Navbar = ({setShowLogin}) => {
             :<div onClick={toHover} className='navbar-profile'>
               <img src={assets.profile_icon} alt="" /></div>}
               <ul className={click?'nav-profile-dropdown':"nav-profile-dropdown-hide"}>
-                <li ><img src={assets.bag_icon} alt="" /><p>Orderd</p></li>
+                <li onClick={()=>navigate('/myorders')} ><img src={assets.bag_icon} alt="" /><p>Orders</p></li>
                 <hr />
                 <li onClick={logout}><img src={assets.logout_icon} alt="" /><p>Logout</p></li>
               </ul>
